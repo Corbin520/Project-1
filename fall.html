@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fall</title>
+  
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+
+
+</head>
+
+<body>
+    <!-- Container where navbar is placed, was added to add a background image -->
+    <div class="big-fall-img">
+        <nav>
+            <!-- Navbar -->
+            <div class="nav-wrapper indigo darken-3">
+                <!-- Logo was added -->
+                <a href="#" class="brand-logo right">Adventures Utah</a>
+                <!-- Buttons were added -->
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="spring.html">Spring</a></li>
+                    <li><a href="summer.html">Summer</a></li>
+                    <li><a href="winter.html">Winter</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <div class="weather-container">
+                        <i class='fas fa-temperature-high' style='font-size:30px'></i>
+                        <p id="weather-temp"></p>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class=container>
+        <h1>Looking for fall activities in Park City? Look no further, we have 5 unforgetable activites
+            that you will love!
+        </h1>
+
+        <h2>Fall Activities</h2>
+
+
+        <!-- Fall activities  -->
+
+
+        <!-- Fishing Activity  -->
+        <div id="fishing-sb-container">
+            <p id="activity-info">
+                Ready to catch some of the greatest snow on earth? We can help you!! The Canyons ski and snowboard
+                resort
+                has everything you need. It ranges from moderate paths, all the way to the thrill seekers that
+                are wanting to hit the jumps and rails. Not to mention how beautiful the area is.
+                Give fly fishing a try with one of Park City's expert guides.
+            </p>
+            <!-- Fishing image -->
+            <img id="fishing-img" src="./assets/images/fishing.jpg" alt="fishing image" width="600" height="350" />
+            <h4>Address: 1109 Park Ave Park City, UT 84060</h4>
+            <!-- append reviews from JS to this -->
+            <div id="review-info">
+                <p id="onthefly-reviews"></p>
+                <p id="onthefly-CustomerComment"></p>
+                <a id="yelpReview-onthefly" href="https://www.yelp.com/biz/park-city-on-the-fly-park-city?osq=Fishing"
+                    target="_blank">
+                    All Yelp Reviews</a>
+            </div>
+        </div>
+
+
+        <!-- Horseback Riding Activity  -->
+        <div id="horsebackriding-container">
+            <p id="activity-info">
+                Take in the beautiful fall scenery as you horseback ride through nature. Great for begginer riders,
+                family outting
+                and romantic fall moments!
+
+            </p>
+            <!-- Riding image -->
+            <img id="horsebackriding-img" src="./assets/images/horsebackriding.jpg" alt="horseback" width="600"
+                height="350" />
+            <h4>Address: Edit 3181 E Lake Creek Rd Park City, UT 84032 </h4>
+
+            <!-- append reviews from JS to this -->
+            <div id="review.info"></div>
+            <p id="KBHorses-reviews"></p>
+            <p id="KBHorses-CustomerComment"></p>
+            <a id="yelpReview-KBHorses"
+                href="https://www.yelp.com/biz/kb-horses-heber-city?hrid=Ulb4abemWTZJykozDGCvAA&osq=horseback+riding"
+                target="_blank">
+                All Yelp Reviews</a>
+        </div>
+
+
+
+        <!-- Bike Riding Activity  -->
+        <div id="bikeriding-container">
+            <p id="activity-info">
+                Rent a bike, cruise one of Park City's paved paths or the Historic Pacific Union Rail Trail and explore
+                the area. Renting comes cheap, easy and fun with Pedego Electric Bikes Park City!
+            </p>
+            <!-- Biking image -->
+
+            <img id="biking-img" src="./assets/images/biking.jpg" alt="biking image" width="600" height="350" />
+            <h4>Address: 1890 Bonanza Dr Ste 102
+                Park City, UT 84060</h4>
+            <!-- append reviews from JS to this -->
+            <div id="review-info">
+                <p id="electricBikes-reviews"></p>
+                <p id="electricBikes-CustomerComment"></p>
+                <a id="yelpReview-ElectricBikes"
+                    href="https://www.yelp.com/biz/pedego-electric-bikes-park-city-park-city" target="_blank">
+                    All Yelp Reviews</a>
+            </div>
+        </div>
+
+
+        <!-- HotAir Balloon Activity  -->
+        <div id="hotair-balloon">
+            <p id="activity-info">
+                Feeling adventurous? Take in the absolute best views of Park City with a hot air balloon ride high above
+                the town. Gaze out
+                over Kamas Valley as you ascend thousands of feet into the sky with the Wasatch Mountains forming a
+                rugged skyline to the west and the streets of Park City gradually getting smaller and smaller. It’s a
+                smooth ride to the top where quiet contemplation awaits.
+            </p>
+            <!-- Balloon image -->
+
+            <img src="./assets/images/hotairbaloons.jpg" alt="hotairballoons" width="600" height="350" />
+            <h4>Address: 91163, Salt Lake City, Utah 84109</h4>
+            <!-- append reviews from JS to this -->
+            <div class="review-info">
+                <p id="airballoons-reviews"></p>
+                <p id="airballoons-CustomerComment"></p>
+                <a id="yelpReview-airballoons"
+                    href="https://www.yelp.com/biz/skywalker-balloon-company-park-city?osq=Park+City+Balloon+Adventures"
+                    target="_blank">
+                    All Yelp Reviews</a>
+            </div>
+        </div>
+
+
+        <!-- BobSled Activity  -->
+        <div id="olympic-park">
+            <p id="activity-info">
+                Just outside of downtown Park City, at 7,300 ft. elevation, the Utah Olympic Park still buzzes with
+                excitement and enthusiasm that one might have expected 15 years ago when the Park hosted five events
+                during the Salt Lake 2002 Olympic Winter Games: bobsled, skeleton, luge, and the Nordic combined events.
+                And although the two weeks of those games have long passed, the exhilaration of those sports is still
+                electric in the brisk mountain air.
+            </p>
+            <!-- Bobsled image -->
+
+            <img src="./assets/images/bobsled.jpg" alt="Olympic Park Course" width="600" height="350" />
+            <h4>Address: 3419 Olympic Pkwy, Park City, UT 84098</h4>
+            <!-- append reviews from JS to this -->
+            <div id="review-info">
+                <p id="bobsled-reviews"></p>
+                <p id="bobsled-CustomerComment"></p>
+                <a id="yelpReview-bobsled"
+                    href="https://www.yelp.com/biz/utah-olympic-park-park-city?osq=WINTER+BOBSLED+EXPERIENCE"
+                    target="_blank">
+                    All Yelp Reviews</a>
+            </div>
+        </div>
+
+        <!-- Start of Footer -->
+
+    </div>
+    <footer class="page-footer indigo darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"></h5>
+                    <p class="grey-text text-lighten-4">
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">
+                                <h5>Back to the top</h5>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Javascript link -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/fall.js" type="text/javascript"></script>
+</body>
+
+</html>

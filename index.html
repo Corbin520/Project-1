@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Homepage</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <div class="main-container">
+        <nav>
+            <!-- Navbar -->
+            <div class="nav-wrapper indigo darken-3">
+                <!-- Logo was added -->
+                <a href="#" class="brand-logo center" id="logo">Adventures Utah</a>
+                <div class="weather-container">
+                    <i class='fas fa-temperature-high' style='font-size:30px'></i>
+                    <p id="weather-temp"></p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class=container>
+        <h5>
+            Now that you have arrived, kick-back, take a breath of fresh air, and have fun. As you explore our charming
+            town you may
+            notice the unique blend of new and old buildings and elements from the town's silver mining era and skiing
+            history are
+            seamlessly woven into the town's more modern architecture. Keep an eye out for rings, symbols, flags, and
+            statues
+            displayed from Park City's participation in the 2002 Winter Olympic Games. In fact you can even take the
+            ride of a
+            lifetime on the bobsled and experience what it is like to go down the Olympic track at the Utah Olympic
+            Park.
+        </h5>
+
+        <h5>
+            While you are staying with us, we encourage you to explore the combined 9,326 skiable acres at Park City
+            Mountain and
+            Deer Valley Resort. If you are looking for winter activities beyond skiing and snowboarding, may we suggest
+            snow biking,
+            dog sledding, fly-fishing, snowmobiling, and even stand up paddleboard yoga in a geo-thermal crater. Or you
+            may prefer
+            something a bit less active. If you are a history buff you will enjoy one of our museums or historic tours.
+            You can also
+            spend hours strolling through quaint shops and galleries on Historic Main Street.
+        </h5>
+
+        <h5>
+            When it's time to spice things up, enjoy mouth-watering courses at one of over 150 restaurants, sip on
+            hand-crafted
+            whiskey at the world’s first and only ski-in distillery, or sign up for a cooking class, food tour, or wine
+            tasting
+            class. When a little downtime is needed choose from a wide variety of spas and massage therapist.
+        </h5>
+
+        <h5>
+            However you chose to experience Park City, we encourage you to take advantage of our free bus and trolley
+            system or use
+            one of our transportation providers to get you from place to place.
+        </h5>
+    </div>
+
+    <br><br><br>
+
+
+
+    <div class="container">
+        <h2 class="center-align">Seasonal Activities</h2>
+        <div class="divider"></div>
+        <div class="divider"></div>
+        <div class="divider"></div>
+    </div>
+
+    <br><br>
+
+    <div class=container>
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <a href="summer.html">
+                        <div class="card-image">
+                            <img src="assets/images/summer-card.jpg">
+                    </a>
+                    <span class="card-title">
+                        <h4>Summer</h4>
+                    </span>
+                </div>
+                <div class="card-content">
+                    <p>If you want to explore some of Park City's Summer activities, cick the image above or link below.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="summer.html">Check it out</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="card">
+                <a href="fall.html">
+                    <div class="card-image">
+                        <img src="assets/images/fall-card.webp">
+                </a>
+                <span class="card-title">
+                    <h4>Fall</h4>
+                </span>
+            </div>
+            <div class="card-content">
+                <p>If you want to explore some of Park City's Fall activities, cick the image above or link below.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="fall.html">Check it out</a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6">
+            <div class="card">
+                <a href="winter.html">
+                    <div class="card-image">
+                        <img src="assets/images/winter-card.jpg">
+                </a>
+                <span class="card-title" href="winter.html">
+                    <h4><a class="grey-text text-darken-3" href="winter.html">Winter</a></h4>
+                </span>
+
+            </div>
+            <div class="card-content">
+                <p>If you want to explore some of Park City's Winter activities, cick the image above or link below.</p>
+            </div>
+            <div class="card-action">
+                <a href="winter.html">Check it out</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m6">
+        <div class="card">
+            <a href="spring.html">
+                <div class="card-image">
+                    <img src="assets/images/spring-card.jpg">
+            </a>
+            <span class="card-title">
+                <h4>Spring</h4>
+            </span>
+        </div>
+        <div class="card-content">
+            <p>If you want to explore some of Park City's Spring activities, cick the image above or link below.</p>
+        </div>
+        <div class="card-action">
+            <a href="spring.html">Check it out</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="center-align">Eat & Drink</h2>
+        <div class="divider"></div>
+        <div class="divider"></div>
+        <div class="divider"></div>
+    </div>
+
+    <br><br>
+    <div class=container>
+        <div class=row>
+            <div class="col s6 m12">
+                <div class="card">
+                    <a href="restaurants.html">
+                        <div class="card-image">
+                            <img src="assets/images/restaurant-card.jpg">
+                    </a>
+                    <span class="card-title">
+                        <h2>Restaurants</h2>
+                    </span>
+                </div>
+                <div class="card-content">
+                    <p>If you want to explore some of Park City's restaurants, cick the image above or link below.
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="restaurants.html">Check it out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="page-footer indigo darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"></h5>
+                    <p class="grey-text text-lighten-4">
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">
+                                <h5>Back to the top</h5>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/javascript/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Winter</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Container where navbar is placed, was added to add a backgroung image -->
+    <div class="big-winter-img">
+        <nav>
+            <!-- Navbar -->
+            <div class="nav-wrapper indigo darken-3">
+                <!-- Logo was added -->
+                <a href="#" class="brand-logo right">Adventures Utah</a>
+                <!-- Buttons were added -->
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="index.html">Home Page</a></li>
+                    <li><a href="spring.html">Spring</a></li>
+                    <li><a href="summer.html">Summer</a></li>
+                    <li><a href="fall.html">Fall</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <div class="weather-container">
+                        <i class='fas fa-temperature-high' style='font-size:30px'></i>
+                        <p id="weather-temp"></p>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class=container>
+        <h1>Looking for winter activities in Park City? Look no further, we have 5 unforgetable activites
+            that you will love!
+        </h1>
+
+        <h2>Winter Activities</h2>
+
+
+        <!-- Winter activities  -->
+
+
+
+        <div id="ski-sb-container">
+            <p id="activity-info">
+                Ready to catch some of the greatest snow on earth? We can help you!! The Canyons ski and snowboard
+                resort
+                has everything you need. It ranges from moderate paths, all the way to the thrill seekers that
+                are wanting to hit the jumps and rails. Not to mention how beautiful the area is.
+            </p>
+            <!-- Ski and snow board image -->
+            <img id="ski-img" src="./assets/images/ski-snowboard.jpg" alt="ski image" width="600" height="350" />
+            <h4>Address: 1345 Lowell Ave, Park City, UT 84060</h4>
+            <div id="review-info">
+                <p id="canyonsReviews"></p>
+                <p id="canyonsCustomerComment"></p>
+                <a id="yelpReview-canyons" href="https://www.yelp.com/biz/park-city-mountain-resort-park-city"
+                    target="_blank">
+                    All Mountain Resort Yelp Reviews</a>
+            </div>
+        </div>
+
+
+
+        <div id="snowmobile-container">
+            <p id="activity-info">
+                Cant get enough of park city mountains? Head over to Red Pine Adventures and rent a snowmobile to
+                go off the paths to create your own fun and activites.
+            </p>
+            <img id="snowmobile-img" src="./assets/images/snowmobile.jpg" alt="snowmobile" width="600" height="350" />
+            <h4>Address: 2050 W White Pine Canyon Rd, Park City, UT 84060</h4>
+
+            <!-- append reviews from JS to this -->
+            <div id="review.info"></div>
+            <p id="redPineReviews"></p>
+            <p id="redPineCustomerComment"></p>
+            <a id="yelpReview-redPine" href="https://www.yelp.com/biz/red-pine-adventures-park-city" target="_blank">
+                All Red Pine Adventure Yelp Reviews</a>
+        </div>
+
+
+
+
+        <div id="tubing-container">
+            <p id="activity-info">
+                Take snow tubing to a new level! We promise you that you have never seen tubing like this. For a
+                small price, you can head up to Soldier Hollow Nordic Center located near Midway UT and have a fun
+                filled day with family and friends sliding down the massive hills. Warning, you may have to much
+                fun so be aware.
+            </p>
+            <img id="tubing-img" src="./assets/images/sledding.jpg" alt="sledding image" width="600" height="350" />
+            <h4>Address: 2002 Soldier Hollow Lane, Midway, UT 84049</h4>
+            <div id="review-info">
+                <p id="soldierHollowReviews"></p>
+                <p id="soldierCustomerComment"></p>
+                <a id="yelpReview-soldierHollow" href="https://www.yelp.com/biz/soldier-hollow-tubing-hill-midway"
+                    target="_blank">
+                    All Soldier Hollow Yelp Reviews</a>
+            </div>
+        </div>
+
+
+
+        <div id="dog-sledding">
+            <p id="activity-info">
+                Feeling daring? You can actually go backcountry dog sledding.. Yes, you heard that correctly. You can
+                spend the day exploring the beautiful mountainers while being pulled by dogs. If this sounds like
+                something you would like todo, Luna Lobos Dog Sledding can take care of you.
+            </p>
+            <img src="./assets/images/dog-sledding.jpg" alt="dog sledding" width="600" height="350" />
+            <h4>Address: 4733 W Browns Canyon Rd, Peoa, UT 84061</h4>
+            <div class="review-info">
+                <p id="lunaLobosReviews"></p>
+                <p id="lunaCustomerComment"></p>
+                <a id="yelpReview-canyons" href="https://www.yelp.com/biz/luna-lobos-dog-sledding-park-city"
+                    target="_blank">
+                    All Luna Lobos Yelp Reviews</a>
+            </div>
+        </div>
+
+
+
+        <div id="mainstreet-shopping">
+            <p id="activity-info">
+                Thow on a jacket and head down to the historic pack city mainstreet. This is a shopping expeience that
+                you will enjoy. You can expect some of the best restuants and unique foods that Utah has to offer. Dont
+                forget to stop and grab some pizza from Main Street Pizza & Noodle.
+            </p>
+            <img src="./assets/images/park-city-shopping.jpg" alt="park city shopping" width="600" height="350" />
+            <h4>Address: 530 Main St, Park City, UT 84060</h4>
+            <div id="review-info">
+                <p id="mainstreetReviews"></p>
+                <p id="mainStreetCustomerComment"></p>
+                <a id="yelpReview-canyons" href="https://www.yelp.com/biz/park-city-main-street-mall-park-city"
+                    target="_blank">
+                    All Park City Main Street Yelp Reviews</a>
+            </div>
+        </div>
+
+
+    </div>
+    <footer class="page-footer indigo darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"></h5>
+                    <p class="grey-text text-lighten-4">
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">
+                                <h5>Back to the top</h5>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript/winter.js" type="text/javascript"></script>
+</body>
+
+</html>

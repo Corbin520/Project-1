@@ -1,0 +1,168 @@
+/* THIS KEEPS THE FOOTER AT THE BOTTOM.  I DON'T KNOW IF IT WILL AFFECT THE BODY OR NAV BAR THOUGH. */
+body {
+    background-image: url("../images/5-Blurred-Backgrounds-Vol.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.big-img {
+    /* The image used */
+    background-image: url("../images/Canyonlands_National_Park.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+.big-winter-img {
+
+    /* The image used */
+    background-image: url("../images/winter-header-page.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+#nav-mobile,
+.brand-logo {
+
+    font-family: 'Italiana', serif;
+}
+
+.big-summer-img {
+
+    /* The image used */
+    background-image: url("../images/Canyonlands_National_Park.jpg");
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+
+#nav-mobile,
+.brand-logo {
+    font-family: 'Italiana', serif;
+}
+
+.big-fall-img {
+
+    /* The image used */
+    background-image: url("../images/parkcity-fall.jpg");
+
+
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+
+
+#nav-mobile,
+.brand-logo {
+    font-family: 'Italiana', serif;
+}
+
+
+
+
+.main-container {
+
+    background-image: url("../images/Best-of-Park-city-main-street.jpg");
+    min-height: 580px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#logo {
+    font-family: 'Vidaloka', serif;
+    font-size: 50px;
+
+}
+
+#ski-sb-container,
+#snowmobile-container,
+#tubing-container,
+#dog-sledding,
+#mainstreet-shopping {
+    padding-bottom: 35px;
+}
+
+
+
+/* Spring page style */
+.spring {
+    background-image: url("../images/spring-activities.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#deer-val-container,
+#olympic-container,
+#canyon-container,
+#fishing-container,
+#swaner-shopping {
+    padding-bottom: 35px;
+/* ************************   */
+}
+
+p{
+font-size: 22px;
+font-family: 'Asar', serif;
+padding-bottom: 35px;
+}
+
+h1, h2, h3{
+    font-family: 'Aclonica', sans-serif;
+}
+
+h4{
+font-size: 20px;
+font-family: 'Asar', serif;
+padding-bottom: 35px;
+
+}
+
+
+.weather-container {
+  font-family: 'Acme', sans-serif;
+  display: inline-flex;
+  font-size: 25px;
+}
+

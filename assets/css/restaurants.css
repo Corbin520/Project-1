@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.big-img {
+    /* The image used */
+    background-image: url("../images/town1.jpg");
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    min-height: 380px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+#nav-mobile,
+.brand-logo {
+    font-family: 'Italiana', serif;
+}
+
+
+
+element.style {
+    background-color: white;
+
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.second-center-picture {
+    text-align: center;
+    height: 300px;
+}
+
+element.style {
+    object-position: 50% 50%;
+    filter: saturate(0.9) brightness(0.8);
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring</title>
+
+    
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' 
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
+</head>
+
+<body>
+
+    <div class="spring">
+        <nav>
+            <div class="nav-wrapper indigo darken-3">
+                <a href="#" class="brand-logo right">Adventures Utah</a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="./index.html">Home Page</a></li>
+                    <li><a href="./summer.html">Summer</a></li>
+                    <li><a href="./fall.html">Fall</a></li>
+                    <li><a href="./winter.html">Winter</a></li>
+                    <li><a href="./restaurants.html">Restaurants</a></li>
+                    <div class="weather-container">
+                        <i class='fas fa-temperature-high' style='font-size:30px'></i>
+                        <p id="weather-temp"></p>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class=container>
+        <h2>This town is jam packed with spring activities. True, spring weather can bring its challenges, however,
+            with a little research and planning you can have an excellent break that you will remember for years!!</h2>
+
+        <h3> Spring Activities</h3>
+
+
+        <!-- Spring activities  -->
+
+
+
+        <div id="deer-val-container">
+            <p id="activity-info">
+                Deer Valley Resort is a skiers only resort located in the historic mining town of Park City, Utah.
+                Rated the number #1 ski resort in North America for an remarkable FIVE years running by the readers of
+                SKI Magazine,
+                we never stop striving to better our guests' experience.
+            </p>
+            <!-- Ski and snow board image -->
+            <img id="deer-img" src="./assets/images/deer-valley-hero3.jpg" alt="Deer Valley" width="600" height="350" />
+            <h4>Address: 2250 Deer Valley Dr, Park City, UT 84060</h4>
+            <div id="review-info">
+                <p id="deerValleyReviews"></p>
+                <p id="deerValleyCustomerComment"></p>
+                <a id="yelpReview-deerValley" href="https://www.yelp.com/biz/park-city-mountain-resort-park-city" target="_blank">
+                    All Deer Valley Resort Yelp Reviews</a>
+            </div>
+        </div>
+
+
+
+        <div id="olympic-container">
+            <p id="activity-info">
+                Utah Olympic Park offers a variety of adventure.
+                From learning about the Park's unique Olympic heritage on a guided tour to taking a ride of a lifetime
+                on the Comet Bobsled Ride, the Olympic Park offers activities for all ages and abilities. Zip, climb,
+                slide,
+                hike and explore Olympic history!
+            </p>
+            <img id="olympic-img" src="./assets/images/olympic-park.jpg" alt="Olympic Park" width="600" height="350" />
+            <h4>Address: 3419 Olympic Pkwy, Park City, UT 84098</h4>
+
+            <!-- append reviews from JS to this -->
+            <div id="review-info"></div>
+            <p id="olympicParkReviews"></p>
+            <p id="olympicParkCustomerComment"></p>
+            <a id="yelpReview-olympicPark" href="https://www.yelp.com/biz/utah-olympic-park-park-city" target="_blank">
+                All Olympic Park Adventure Yelp Reviews</a>
+        </div>
+
+
+
+
+        <div id="canyon-container">
+            <p id="activity-info">
+                This area, formerly known as Park West, is the closest to Park City and the former site of the Olympic
+                Games.
+            </p>
+            <img id="canyon-img" src="./assets/images/Canyons Village.jpg" alt="Canyons Vaillage" width="600"
+                height="350" />
+            <h4>Address: 4000 Canyons Resort Dr, Park City, UT 84098</h4>
+            <div id="review-info">
+                <p id="canyonsReviews"></p>
+                <p id="canyonsCustomerComment"></p>
+                <a id="yelpReview-canyons" href="www.yelp.com/biz/canyons-village-summer-concert-series-park-city"
+                    target="_blank">
+                    All Canyons Village at Park City Yelp Reviews</a>
+            </div>
+        </div>
+
+
+        <div id="fishing-container">
+            <p id="activity-info">
+                We provide half-day and full-day guided fly fishing tours on the Weber River,
+                Provo River and other streams in Utah.
+                Whether you’re new to fly fishing or very experienced, our guides are dedicated to
+                getting you on the most productive water,
+                with the right flies, using the best technique.
+            </p>
+            <img id="fishing-img" src="./assets/images/flyfishing.jpg" alt="Flying Fishing" width="600" height="350" />
+            <h4>Address: 1500 Kearns Blvd, Suite c201, Park City, UT 84060-</h4>
+            <div class="review-info">
+                <p id="flyFhisingReviews"></p>
+                <p id="flyFishingCustomerComment"></p>
+                <a id="yelpReview-flyFhishing" href="https://www.yelp.com/biz/utah-pro-fly-fishing-park-city" target="_blank">
+                    All Fly Fishing Yelp Reviews</a>
+            </div>
+        </div>
+
+
+
+        <div id="swaner-shopping">
+            <p id="activity-info">
+                Swaner is a part of Utah State University. We offer weekly nature tours, wildlife viewing
+                opportunities, summer camps, environmental education for children and adults, evening lecture series,
+                gift shop with local and ecofriendly art and gifts and much more!
+                You can hike, bike or snowshoe to the benches that are placed along this beautiful overlook.
+                Check out our calendar for updated information on upcoming events.
+
+            </p>
+            <img id="swaner" src="./assets/images/swanerp1.jpg" alt="Swaner Preserve" width="600" height="350" />
+            <h4>Address: 1258 Center Dr, Park City, UT 84098</h4>
+            <div id="review-info">
+                <p id="swanerReviews"></p>
+                <p id="swanerCustomerComment"></p>
+                <a id="yelpReview-swaner" href="https://www.yelp.com/biz/swaner-preserve-and-ecocenter-park-city"
+                    target="_blank">
+                    All Swaner Preserve and EcoCenter Yelp Reviews</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="page-footer indigo darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"></h5>
+                    <p class="grey-text text-lighten-4">
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#">
+                                <h5>Back to the top</h5>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript/spring.js" type="text/javascript"></script>
+
+</body>
+
+</html>
